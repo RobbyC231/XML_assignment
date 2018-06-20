@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--stating that there are multipule url-mapping tags-->
+<!ELEMENT request-mappings (url-mapping+)>
+<!--stating that there is only one request-handler element per url-mapping element-->
+<!ELEMENT url-mapping (request-handler?)>
+<!--attributes for url-mapping, url and currentpage are needed -->
+<!ATTLIST url-mapping
+	url CDATA #REQUIRED
+	currentpage CDATA #REQUIRED
+>
+<!--multiple command-mappings for each request-handler-->
+<!ELEMENT request-handler (command-mapping+)>
+<!--class attribute is required for request-handler-->
+<!ATTLIST request-handler
+	class CDATA #REQUIRED
+>
+<!--command-mapping is empty-->
+<!ELEMENT command-mapping EMPTY>
+<!ATTLIST command-mapping
+	command CDATA #REQUIRED
+	targetpage CDATA #IMPLIED
+>
