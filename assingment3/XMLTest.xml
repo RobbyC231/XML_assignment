@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<telephoneBill>
+	<customer phoneNumber="403-273-0293">
+		<name>Stewart Blake</name>
+		<address>228 Tarrowdale Crescent</address>
+		<city>Calgary</city>
+		<province>AB</province>
+	</customer>
+	<call number="604-374-9525" date="2004-04-13" durationInMinutes="12" charge="3.14"/>
+	<call number="604-674-5875" date="2004-04-14" durationInMinutes="5" charge="0.98"/>
+	<call number="780-266-1267" date="2004-04-19" durationInMinutes="28" charge="2.03"/>
+	<call number="403-902-1882" date="2004-04-28" durationInMinutes="7"/>
+</telephoneBill>
