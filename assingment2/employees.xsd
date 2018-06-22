@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.1">
+<xs:annotation>
+  <xs:appinfo>Assignment 2 Info</xs:appinfo>
+  <xs:documentation xml:lang="en">
+  This Schema defines a employee xml for Assingment 2
+  </xs:documentation>
+</xs:annotation>
+	<xs:element name="employees">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="employee" minOccurs="1" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="expertise" type="xs:string"/>
+							<xs:element name="consultedClient" minOccurs="1" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="name" type="xs:string" use="required"/>
+									<xs:attribute name="durationInMonths" type="xs:positiveInteger" use="optional"/>
+									<xs:attribute name="position" type="positionType" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="name" type="xs:string" use="required"/>
+						<xs:attribute name="birthdate" type="xs:string" use="optional"/>
+						<xs:attribute name="sinNumber" type="xs:string" use="required"/>
+						<xs:attribute name="sex" type="sexType" use="required"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="sexType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="male"/>
+			<xs:enumeration value="female"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="positionType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="manager"/>
+			<xs:enumeration value="programmer"/>
+			<xs:enumeration value="teamLead"/>
+			<xs:enumeration value="analyst"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

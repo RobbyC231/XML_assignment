@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<employees xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="employees.xsd">
+	<employee name="Jonathan Smithe" birthdate="1949" sinNumber="384 288 981" sex="male">
+		<expertise>Java, XML, UML, Project management</expertise>
+		<consultedClient name="Enmax" durationInMonths="39" position="manager"/>
+		<consultedClient name="Enbridge" durationInMonths="12" position="teamLead"/>
+		<consultedClient name="City Of Calgary" durationInMonths="26" position="programmer"/>
+	</employee>
+	<employee name="Shiela Knox" birthdate="1970" sinNumber="284 401 483" sex="female">
+		<expertise>C#, C++, XML, Perl, Apache Tomcat, Oracle, MySQL</expertise>
+		<consultedClient name="Logitech" position="programmer"/>
+		<consultedClient name="Husky" durationInMonths="16" position="programmer"/>
+		<consultedClient name="Northern Oil" durationInMonths="20" position="analyst"/>
+		<consultedClient name="Mark's Work Wearhouse" durationInMonths="24" position="programmer"/>
+	</employee>
+</employees>
