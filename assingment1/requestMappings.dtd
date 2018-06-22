@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Nice work here, Robert.  Your dtd is well formed, valid
+and properly validates the xml file with one exception: request-handler
+was optional so it shouldn't have a sign.  Otherwise nice work
+9/10
+-->
 <!--stating that there are multipule url-mapping tags-->
 <!ELEMENT request-mappings (url-mapping+)>
 <!--stating that there is only one request-handler element per url-mapping element-->

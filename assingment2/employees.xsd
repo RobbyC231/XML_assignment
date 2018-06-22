@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.1">
-<xs:annotation>
-  <xs:appinfo>Assignment 2 Info</xs:appinfo>
-  <xs:documentation xml:lang="en">
+<!-- Nice work here Robert.  Good work with the enumerations and getting this file
+to validate correctly.  The only thing I missed here was a comment like this.  Otherwise
+everything else looks good.
+9/10
+-->
+	<xs:annotation>
+		<xs:appinfo>Assignment 2 Info</xs:appinfo>
+		<xs:documentation xml:lang="en">
   This Schema defines a employee xml for Assingment 2
   </xs:documentation>
-</xs:annotation>
+	</xs:annotation>
 	<xs:element name="employees">
 		<xs:complexType>
 			<xs:sequence>

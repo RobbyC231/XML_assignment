@@ -3,6 +3,10 @@
 	<xsl:template match="/"> <!--this is matches to the first root elements of the xml file-->
 		<html>
 			<head>
+			<!-- Good work here, Robert.  You aced this one - your xsl properly formats and outputs
+the xml data.  You have the obligatory comment as well.
+10/10
+-->
 				<title>XML Test</title>
 			</head>
 			<body>
